@@ -22,3 +22,7 @@ endif
 alias ls "ls $colorflag"
 
 source $DOTFILES_DIR/setup/alias.tcsh
+
+if (-f ~/.cshrc.$USER) then
+ source ~/.cshrc.$USER
+endif
